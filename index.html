@@ -1,47 +1,32 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RockAuto | Auto Parts</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <title>RockAuto | Auto Parts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="navbar">
-
+<nav class="navbar">
     <div class="nav-container">
-
         <a href="index.html" class="logo">
             <img src="logo.png" alt="RockAuto Logo">
             ROCK<span>AUTO</span>
         </a>
-
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="#vehicle-selector">Find Parts</a>
             <a href="#categories">Categories</a>
             <a href="#part-search">Part Number Search</a>
-            <a href="cart.html" class="cart-link">Cart</a>
-            <a href="#account">Account</a>
+            <a href="signin.html">Account</a>
         </div>
-
     </div>
+</nav>
 
-</div>
-
-<div class="hero">
-
+<section class="hero">
     <div class="hero-content">
-
         <p class="small-heading">AUTOMOTIVE PARTS & ACCESSORIES</p>
-        
         <h1>
             Find the Right Part<br>
             for Your Vehicle
@@ -56,12 +41,10 @@
             <input type="text" placeholder="Search by part name, number, or keyword...">
             <button type="button">Search</button>
         </div>
-
     </div>
+</section>
 
-</div>
-
-<div class="section" id="vehicle-selector">
+<section class="section" id="vehicle-selector">
 
     <div class="section-heading">
         <p class="section-label">START HERE</p>
@@ -70,7 +53,6 @@
     </div>
 
     <div class="vehicle-box">
-
         <div class="vehicle-step">
             <label>Year</label>
             <select>
@@ -139,13 +121,10 @@
         </div>
 
         <button type="button" class="find-button">Find Parts</button>
-
     </div>
+</section>
 
-</div>
-
-<div class="section categories-section" id="categories">
-
+<section class="section categories-section" id="categories">
     <div class="section-heading">
         <p class="section-label">BROWSE OUR CATALOG</p>
         <h2>What Are You Looking For?</h2>
@@ -153,7 +132,6 @@
     </div>
 
     <div class="category-grid">
-
         <div class="category-card">
             <div class="category-icon">🔧</div>
             <h3>Brake Parts</h3>
@@ -209,15 +187,11 @@
             <p>Mirrors, lights, handles, and exterior parts.</p>
             <a href="#">View Parts →</a>
         </div>
-
     </div>
+</section>
 
-</div>
-
-<div class="section" id="part-search">
-
+<section class="section" id="part-search">
     <div class="part-number-box">
-
         <div>
             <p class="section-label">ALREADY KNOW WHAT YOU NEED?</p>
             <h2>Search by Part Number</h2>
@@ -228,13 +202,10 @@
             <input type="text" placeholder="Enter part number...">
             <button type="button">Search</button>
         </div>
-
     </div>
+</section>
 
-</div>
-
-<div class="quick-access">
-
+<section class="quick-access">
     <div class="quick-item">
         <span>🚘</span>
         <div>
@@ -251,11 +222,11 @@
         </div>
     </div>
 
-    <a href="cart.html" class="quick-item">
-        <span>🛒</span>
+    <a href="signin.html" class="quick-item">
+        <span>👤</span>
         <div>
-            <h3>Shopping Cart</h3>
-            <p>Review your selected parts</p>
+            <h3>My Account</h3>
+            <p>Sign in or register</p>
         </div>
     </a>
 
@@ -266,36 +237,31 @@
             <p>Get assistance</p>
         </div>
     </div>
+</section>
 
-</div>
-
-<div class="section" id="account">
-
+<section class="section" id="account">
     <div class="section-heading">
         <p class="section-label">YOUR ACCOUNT</p>
         <h2>Account</h2>
         <p>Sign in to view your orders and manage your account.</p>
     </div>
-
+    
     <div class="account-box">
         <h3>Customer Account</h3>
         <p>Sign in or create an account to manage your RockAuto purchases.</p>
-        <button type="button">Sign In</button>
+        <form action="signin.html">
+            <button type="submit">Sign In / Sign Up</button>
+        </form>
     </div>
+</section>
 
-</div>
-
-<div class="footer">
-
+<footer>
     <div class="footer-logo">
         ROCK<span>AUTO</span>
     </div>
-
     <p>Auto Parts Made Easier.</p>
-    <p class="copyright">© 2026 RockAuto Redesign Concept.</p>
-
-</div>
+    <p class="copyright">© 2026 RockAuto Redesign Concept. For educational purposes.</p>
+</footer>
 
 </body>
-
 </html>
